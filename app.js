@@ -3,7 +3,7 @@ const h = Vue.h
 const app = Vue.createApp({
     data(){
         return {
-            title:'Это из свойства template'
+            title:'Text'
         }
     },
     beforeUnmount(){
@@ -14,7 +14,7 @@ const app = Vue.createApp({
     },
     methods:{
         changeTitle(){
-            this.title = 'Изменили!'
+            this.title = 'ChangeText!'
         }
     },
     // template: `
@@ -50,13 +50,13 @@ const app = Vue.createApp({
     }
 })
 app.mount("#app")
-Vue.createApp({
-    data(){
-        return {
-            title: 'New title 2'
-        }
-    }
-}).mount("#app2")
+// Vue.createApp({
+//     data(){
+//         return {
+//             title: 'New title 2'
+//         }
+//     }
+// }).mount("#app2")
 // setTimeout(()=>{
 //     app.unmount()
 // }, 2000)
